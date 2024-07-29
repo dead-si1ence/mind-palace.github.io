@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
 
     function loadMoreImages() {
-        for (let i = 0; i < 5 && currentIndex < images.length; i++) {
+        for (let i = 0; i < 4 && currentIndex < images.length; i++) {
             const img = document.createElement('img');
             img.src = images[currentIndex];
             img.alt = `Hannibal Image ${currentIndex + 1}`;
