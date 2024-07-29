@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannibal Website Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #8b0000;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hannibal Website Documentation</h1>
+
+    <h2>1. Overview</h2>
+    <p>This website is a gallery and information site for the TV show Hannibal. It features a dark theme with a focus on
+        displaying images from the show, along with character information, quotes, and background music.</p>
+
+    <h2>2. File Structure</h2>
+    <pre>
+    mind-palace/
+    ├── index.html
+    ├── style.css
+    ├── script.js
+    ├── documentation.html
+    └── assets/
+        ├── background.jpg
+        ├── background-music.mp3
+        └── image_0.png to image_17.png
+    </pre>
+
+    <h2>3. HTML Structure (index.html)</h2>
+    <p>The main HTML file contains the following sections:</p>
+    <ul>
+        <li>Header with navigation menu</li>
+        <li>Main content:
+            <ul>
+                <li>Gallery section</li>
+                <li>About section</li>
+                <li>Characters section</li>
+                <li>Quotes section</li>
+                <li>Legacy section</li>
+            </ul>
+        </li>
+        <li>Footer with creator information and documentation link</li>
+        <li>Audio element for background music</li>
+    </ul>
+
+    <h2>4. CSS Styles (style.css)</h2>
+    <p>The CSS file defines the visual style of the website, including:</p>
+    <ul>
+        <li>Dark theme with blood red accents</li>
+        <li>Responsive design for mobile devices</li>
+        <li>Image carousel and lightbox styles</li>
+        <li>Blurred background effect</li>
+    </ul>
+
+    <h2>5. JavaScript Functionality (script.js)</h2>
+    <p>The JavaScript file handles the interactive elements of the site:</p>
+    <ul>
+        <li>Mobile menu toggle</li>
+        <li>Image carousel functionality</li>
+        <li>Lightbox for enlarged image viewing</li>
+        <li>Dynamic character list population</li>
+        <li>Random quote generator</li>
+        <li>Smooth scrolling for navigation</li>
+        <li>Background music control</li>
+    </ul>
+
+    <h2>6. How to Add New Content</h2>
+    <h3>Adding Images:</h3>
+    <ol>
+        <li>Add new image files to the assets/ directory</li>
+        <li>Update the <code>images</code> array in script.js with new file names</li>
+    </ol>
+
+    <h3>Adding Quotes:</h3>
+    <ol>
+        <li>Add new quote strings to the <code>quotes</code> array in script.js</li>
+    </ol>
+
+    <h3>Adding Characters:</h3>
+    <ol>
+        <li>Add new character objects to the <code>characters</code> array in script.js</li>
+    </ol>
+
+    <h2>7. Customization</h2>
+    <p>To customize the website:</p>
+    <ul>
+        <li>Modify color variables in the :root selector in style.css</li>
+        <li>Update background image by replacing assets/background.jpg</li>
+        <li>Change background music by replacing assets/background-music.mp3</li>
+    </ul>
+
+    <h2>8. Browser Compatibility</h2>
+    <p>This website is designed to work with modern browsers. For older browsers, some features may not function
+        correctly.</p>
+
+    <h2>9. Known Issues and Limitations</h2>
+    <ul>
+        <li>Autoplay of background music may be blocked by some browsers</li>
+        <li>Image lazy loading is not implemented, which may affect initial load times</li>
+    </ul>
+
+    <h2>10. Future Improvements</h2>
+    <ul>
+        <li>Implement lazy loading for gallery images</li>
+        <li>Add more interactive elements like character bios or episode guides</li>
+        <li>Enhance the lightbox with touch gestures for mobile users</li>
+        <li>Implement a search functionality for quotes or characters</li>
+    </ul>
+</body>
+
+</html>

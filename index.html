@@ -4,52 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hannibal: Darkness Unveiled</title>
+    <title>Hannibal: A Descent into Madness</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <div class="background-container"></div>
     <header>
-        <nav id="main-nav">
-            <div class="menu-icon" id="menu-toggle">☰</div>
+        <div id="menu-toggle" class="menu-icon">☰</div>
+        <nav>
             <ul id="nav-list">
-                <li><a href="#about">About</a></li>
                 <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#characters">Characters</a></li>
                 <li><a href="#quotes">Quotes</a></li>
                 <li><a href="#legacy">Legacy</a></li>
             </ul>
         </nav>
+        <button id="mute-btn" class="mute-btn">🔊</button>
     </header>
 
     <main>
+        <section id="gallery" class="section">
+            <h2>Gallery of Horrors</h2>
+            <div class="carousel-container">
+                <div id="image-carousel" class="image-carousel"></div>
+                <button id="prev-btn" class="carousel-btn">&#10094;</button>
+                <button id="next-btn" class="carousel-btn">&#10095;</button>
+            </div>
+            <div id="lightbox" class="lightbox">
+                <span class="close-btn">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+                <div class="lightbox-caption"></div>
+            </div>
+        </section>
+
         <section id="about" class="section">
-            <h1>Hannibal: A Descent into Madness</h1>
+            <h2>Hannibal: A Descent into Madness</h2>
             <p>Explore the dark and twisted world of NBC's Hannibal, starring Mads Mikkelsen as the enigmatic Dr.
                 Hannibal Lecter.</p>
         </section>
 
-        <section id="gallery" class="section">
-            <h2>Gallery of Horrors</h2>
-            <div id="image-gallery" class="image-gallery">
-                <!-- Images will be dynamically loaded here -->
-            </div>
-            <button id="load-more">Reveal More</button>
-        </section>
-
         <section id="characters" class="section">
             <h2>Cast of Shadows</h2>
-            <ul id="character-list">
-                <!-- Character info will be dynamically loaded here -->
-            </ul>
+            <ul id="character-list"></ul>
         </section>
 
         <section id="quotes" class="section">
             <h2>Whispers in the Dark</h2>
-            <div id="quote-container">
-                <!-- Quotes will be dynamically loaded here -->
-            </div>
+            <div id="quote-container"></div>
             <button id="new-quote">Another Morsel</button>
         </section>
 
@@ -62,8 +65,16 @@
 
     <footer>
         <p>Created by a devoted admirer of the macabre. Contact: <a href="https://www.instagram.com/m0ntas3r/?hl=de"
-                target="_blank">Montaser Amoor</a>&copy</p>
+                target="_blank">Montaser Amoor</a> © | <a href="documentation.html" target="_blank">Documentation</a>
+        </p>
     </footer>
+
+    <audio id="background-audio" loop>
+        <source src="assets/main_theme_music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
